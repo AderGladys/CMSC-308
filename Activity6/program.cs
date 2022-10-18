@@ -8,7 +8,7 @@ namespace CodeList
     {
         static void Main(string[] args)
         {
-            List<char> charList = new List<char>(10) {'S', 'X', 'C', 'O', 'M', 'P', 'U', 'T', 'E', 'R'};
+            List<char> charList = new List<char>(10) {'S','X','C','O','M','P','U','T','E','R'};
 
             Console.Write("Enter code: ");
             string code = Console.ReadLine().ToUpper();
@@ -25,7 +25,7 @@ namespace CodeList
                 }
                 else
                 {
-                    Console.Write(" err ");
+                    Console.Write("");
                 }
             }
         }
