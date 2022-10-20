@@ -23,7 +23,7 @@ public class App {
             try {
                 switch (scan.nextInt()) {
                     case 1:
-                        System.out.println("Enter augend: ");
+                        System.out.println("Enter addend: ");
                         x = scan.nextDouble();
                         System.out.println("Enter addend: ");
                         y = scan.nextDouble();
@@ -129,3 +129,4 @@ public class App {
         return result;
     }
 }
+
