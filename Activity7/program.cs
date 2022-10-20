@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class App {
+public class Main {
     public static void main(String[] args) {
 
         Boolean flag = true;
@@ -10,49 +10,49 @@ public class App {
         do {
             Scanner scan = new Scanner(System.in);
 
-            System.out.println("Calculator Menu");
+            System.out.println("CALCULATOR");
             System.out.println("[1] Addition");
             System.out.println("[2] Subtraction");
             System.out.println("[3] Multiplication");
             System.out.println("[4] Division");
             System.out.println("[5] Exponent");
             System.out.println("[6] Modulo \n");
-            System.out.println("[7] Exit \n");
-            System.out.print("Enter choice [1-7] : ");
+            System.out.println("[7] Quit \n");
+            System.out.print("Enter choice [1-7]:");
 
             try {
                 switch (scan.nextInt()) {
                     case 1:
-                        System.out.println("Enter addend: ");
+                        System.out.println("Enter Augend: ");
                         x = scan.nextDouble();
-                        System.out.println("Enter addend: ");
+                        System.out.println("Enter Addend: ");
                         y = scan.nextDouble();
 
                         System.out.println(addition(x, y));
                         break;
 
                     case 2:
-                        System.out.println("Enter minuend: ");
+                        System.out.println("Enter Minuend: ");
                         x = scan.nextDouble();
-                        System.out.println("Enter subtrahend: ");
+                        System.out.println("Enter Subtrahend: ");
                         y = scan.nextDouble();
 
                         System.out.println(subtraction(x, y));
                         break;
 
                     case 3:
-                        System.out.println("Enter multiplicand: ");
+                        System.out.println("Enter Multiplicand: ");
                         x = scan.nextDouble();
-                        System.out.println("Enter multiplier: ");
+                        System.out.println("Enter Multiplier: ");
                         y = scan.nextDouble();
 
                         System.out.println(multiplication(x, y));
                         break;
 
                     case 4:
-                        System.out.println("Enter dividend: ");
+                        System.out.println("Enter Dividend: ");
                         x = scan.nextDouble();
-                        System.out.println("Enter divisor: ");
+                        System.out.println("Enter Divisor: ");
                         y = scan.nextDouble();
 
                         System.out.println(division(x, y));
@@ -68,21 +68,21 @@ public class App {
                         break;
 
                     case 6:
-                        System.out.println("Enter dividend: ");
+                        System.out.println("Enter Dividend: ");
                         x = scan.nextDouble();
-                        System.out.println("Enter divisor: ");
+                        System.out.println("Enter Divisor: ");
                         y = scan.nextDouble();
 
                         System.out.println(modulo(x, y));
                         break;
 
                     case 7:
-                        System.out.println("Exit");
+                        System.out.println("Quit");
                         flag = false;
                         scan.close();
                         break;
                     default:
-                        System.out.println("Enter num 1-7 only!");
+                        System.out.println("Enter num 1-7");
                         break;
                 }
             } catch (InputMismatchException e) {
@@ -129,4 +129,3 @@ public class App {
         return result;
     }
 }
-
